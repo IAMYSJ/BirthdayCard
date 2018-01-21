@@ -3,10 +3,14 @@ $(".showBtn").click(function() {
     if($(".videoPart").css('display') == "none"){
     	$(".textPart").hide();
     	$(".videoPart").show();
-    	$(".showBtn").html("看字 &raquo;");
+    	$(".mail").css("height", "630px");
+    	$(".videoPart").css("height", "590px");
+    	$(".showBtn").html("CLOSE");
     } else {
     	$(".textPart").show();
     	$(".videoPart").hide();
-    	$(".showBtn").html("看影片 &raquo;");
+    	$(".mail").css("height", "300px");
+    	// $(".textPart").css("height", "386px");
+    	$(".showBtn").html("TO: Alice");
     }
 });
