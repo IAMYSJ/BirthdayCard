@@ -18,15 +18,7 @@ footer {
 	font-family: 'Reenie Beanie';
 }
 
-.jumbotron {
-	width: 100%;
-	height: 100%;
-}
-
 .mail {
-    position: relative;
-    width: 386px;
-    height: 300px;
     background: repeating-linear-gradient(
         45deg,
         #f0f0f0 10px, 
@@ -41,26 +33,17 @@ footer {
 }
 
 .textPart {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 345px;
-    height: 260px;
     background: #f9f9f9;
-    line-height: 2 60px;
-    font-size: 40px;
-    text-align: center;
+    font-size: 30px;
 }
 
 .videoPart {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 345px;
-    height: 260px;
     background: #f9f9f9;
-    line-height:2 60px;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.p-100 {
+    padding: 100px;
 }
 /* ==========================================================================
    w3school - Social Media Buttons
