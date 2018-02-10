@@ -4,23 +4,9 @@
    Author's custom styles
    ========================================================================== */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    height: 620px;
-    background-color: black;
-}
-
-footer {
-	color: white;
-}
-
-.customFontStyle {
-	font-family: 'Reenie Beanie';
-}
-
-.mail {
+    height: 662px;
     background: repeating-linear-gradient(
-        45deg,
+        45deg,            
         #f0f0f0 10px, 
         #f0f0f0 20px,
         #58c 20px, 
@@ -32,42 +18,72 @@ footer {
     );
 }
 
-.textPart {
+.mail {
+    font-family: 'Reenie Beanie';
     background: #f9f9f9;
     font-size: 30px;
+    margin: 30px;
+    height: 676px;
 }
 
-.videoPart {
-    background: #f9f9f9;
-    font-size: 30px;
+/* 手機擺正 */
+@media screen and (orientation:portrait) {
+    body {
+        height: 706px;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0 10px, 
+            #f0f0f0 20px,
+            #58c 20px, 
+            #58c 30px,
+            #f0f0f0 30px, 
+            #f0f0f0 40px,
+            #e55 40px,
+            #e55 50px
+        );
+    }
+
+    .mail {
+        font-family: 'Reenie Beanie';
+        background: #f9f9f9;
+        font-size: 30px;
+        margin: 30px;
+        height: 676px;
+    }
 }
 
-.p-100 {
-    padding: 100px;
+/* 手機橫擺 */
+@media screen and (orientation:landscape) {
+    body {
+        height: 384px;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0 10px, 
+            #f0f0f0 20px,
+            #58c 20px, 
+            #58c 30px,
+            #f0f0f0 30px, 
+            #f0f0f0 40px,
+            #e55 40px,
+            #e55 50px
+        );
+    }
+
+    .mail {
+        font-family: 'Reenie Beanie';
+        background: #f9f9f9;
+        font-size: 30px;
+        margin: 30px;
+        padding: 10px;
+        height: 354px;
+    }
 }
-/* ==========================================================================
-   w3school - Social Media Buttons
-   ========================================================================== */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    margin: 5px 2px;
+
+.text-center {
     text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+    padding: 140px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
+.text-right {
+    text-align: right;
 }
