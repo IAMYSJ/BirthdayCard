@@ -1,0 +1,89 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    height: 662px;
+    background: repeating-linear-gradient(
+        45deg,            
+        #f0f0f0 10px, 
+        #f0f0f0 20px,
+        #58c 20px, 
+        #58c 30px,
+        #f0f0f0 30px, 
+        #f0f0f0 40px,
+        #e55 40px,
+        #e55 50px
+    );
+}
+
+.mail {
+    font-family: 'Reenie Beanie';
+    background: #f9f9f9;
+    font-size: 30px;
+    margin: 30px;
+    height: 676px;
+}
+
+/* 手機擺正 */
+@media screen and (orientation:portrait) {
+    body {
+        height: 706px;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0 10px, 
+            #f0f0f0 20px,
+            #58c 20px, 
+            #58c 30px,
+            #f0f0f0 30px, 
+            #f0f0f0 40px,
+            #e55 40px,
+            #e55 50px
+        );
+    }
+
+    .mail {
+        font-family: 'Reenie Beanie';
+        background: #f9f9f9;
+        font-size: 30px;
+        margin: 30px;
+        height: 676px;
+    }
+}
+
+/* 手機橫擺 */
+@media screen and (orientation:landscape) {
+    body {
+        height: 384px;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0 10px, 
+            #f0f0f0 20px,
+            #58c 20px, 
+            #58c 30px,
+            #f0f0f0 30px, 
+            #f0f0f0 40px,
+            #e55 40px,
+            #e55 50px
+        );
+    }
+
+    .mail {
+        font-family: 'Reenie Beanie';
+        background: #f9f9f9;
+        font-size: 30px;
+        margin: 30px;
+        padding: 10px;
+        height: 354px;
+    }
+}
+
+.text-center {
+    text-align: center;
+    padding: 140px;
+}
+
+.text-right {
+    text-align: right;
+}
