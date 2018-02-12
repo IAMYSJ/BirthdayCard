@@ -13,18 +13,37 @@ body {
     position: relative;
 }
 
-.image > p {
+.image > #p1 {
     position: absolute;
     top: 552px;
-    left: 120px;
-    background-color: yellow;
-    border: 1px solid #000;
+    left: 65px;
+    color: #f9f9f9;
+    font-size: 200%;
+    font-family: 'Reenie Beanie';
+}
+
+.image > #p2 {
+    display: none;
 }
 
 /* 手機擺正 */
 @media only screen and (orientation: portrait) and (max-width: 414px) {
     .mail {
         display: none;
+    }
+
+    .image > #p2 {
+        display: block;
+        position: absolute;
+        top: 552px;
+        left: 80px;
+        color: #f9f9f9;
+        font-size: 200%;
+        font-family: 'Reenie Beanie';
+    }
+
+    .image > #p1 {
+        display: none !important;
     }
 }
 
@@ -61,10 +80,5 @@ body {
 }
 
 .text-center {
-    text-align: center;
     padding: 140px;
-}
-
-.text-right {
-    text-align: right;
 }
